@@ -2,110 +2,80 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff;
 }
 
 header {
-    background-color: #2196F3;
+    background: linear-gradient(to right, #0056b3, #007bff);
     color: white;
     padding: 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #333;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffe600; /* Жовтий колір при наведенні */
+}
+
+main {
+    padding: 20px;
 }
 
 section {
+    margin-bottom: 40px;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Напівпрозорий фон */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #333;
+h2 {
+    color: #007bff;
 }
 
-ul {
-    padding-left: 20px;
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    background-color: #e6f7ff;
+    border: 1px solid #007bff;
+    padding: 20px;
+    width: 23%;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Підняття при наведенні */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    background-color: #333;
+    background: linear-gradient(to right, #0056b3, #007bff);
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-
-.carousel {
+    padding: 10px 0;
     position: relative;
-    overflow: hidden;
-    width: 600px;
-    margin: 0 auto;
-}
-
-.carousel-slide {
-    display: none;
-    text-align: center;
-}
-
-.carousel-slide img {
+    bottom: 0;
     width: 100%;
-    height: auto;
-}
-
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #2196F3;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.carousel-btn.prev {
-    left: 0;
-}
-
-.carousel-btn.next {
-    right: 0;
-}
-
-.carousel-btn:hover {
-    background-color: #0b7dda;
-}
-
-h3{
-    color: white;
 }
