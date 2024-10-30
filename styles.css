@@ -62,12 +62,13 @@ h2 {
     width: 23%;
     text-align: center;
     border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Бокс-тінь */
+    transition: transform 0.3s, box-shadow 0.3s; /* Переходи */
 }
 
 .gallery-item:hover {
     transform: translateY(-5px); /* Підняття при наведенні */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Збільшена тінь при наведенні */
 }
 
 footer {
